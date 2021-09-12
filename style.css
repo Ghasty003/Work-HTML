@@ -24,31 +24,16 @@ header{
 
 .logo-container {
     flex: 1;
+    text-align: left;
 }
 .logo{
     font-weight: 400;
     margin: 5px;
     color: blue;
-}
-nav {
-    flex: 2;
-    list-style-type: none;
-    width: 100%;
-    background-color: #7e5;
-    height: 75px;
-    line-height: 75px;
-    
+    font-family:"Sofia", sans-serif;
 }
 li a:hover{
     background-color:white;
-}
-.nav-links{
-    justify-content: space-around;
-}
-.nav-link{
-    color: #5f5f79;
-    font-size: 18px;
-    text-decoration: none;
 }
 .presentation{
     display: flex;
@@ -156,15 +141,17 @@ li a:hover{
     width: 90%;
     margin: auto;
 }
+footer{
+    display: inline;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+}
+nav{
+    margin-left: 100px;
+}
 .last{
     text-decoration: none;
-}
-li .a{
-    list-style-type: square;
-    list-style-position: outside;
-}
-span{
-    text-align: center;
 }
 
 @keyframes drop{
@@ -199,7 +186,14 @@ span{
         transform: translateX(0px);
     }
 }
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:2000px){
+    .a{
+        display: inline;
+    }
+    span{
+        text-align: center;
+    }
     .presentation{
         flex-direction: column;
     }
@@ -208,7 +202,8 @@ span{
         text-align: center;
     }
     .cover img{
-        margin-top: 60px;
+        margin-top: 100px;
+        height: 250px;
     }
     .intro-text h1{
         font-size: 30px;
