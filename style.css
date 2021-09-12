@@ -194,6 +194,9 @@ nav{
     span{
         text-align: center;
     }
+    nav{
+        margin-top: 50px;
+    }
     .presentation{
         flex-direction: column;
     }
@@ -203,7 +206,7 @@ nav{
     }
     .cover img{
         margin-top: 100px;
-        height: 250px;
+        height: 70px;
     }
     .intro-text h1{
         font-size: 30px;
